@@ -227,6 +227,7 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+
 }
 
 .btn-color-1,
@@ -301,6 +302,8 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  position: relative;
+
 }
 
 .section-container {
@@ -325,6 +328,17 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+  
+  
+}
+
+.btn-container1{
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Align to the center horizontally */
+  transform: translateX(-50%); /* Move back half of its own width to center */
+  width: 100%;
+  padding: 5%;
 }
 
 .experience-details-container {
@@ -368,6 +382,20 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+}
+
+.project-img1 {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  
+}
+
+.project-img2 {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  
 }
 
 .project-title {
