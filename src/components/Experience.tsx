@@ -1,0 +1,7 @@
+import { CalendarDays } from 'lucide-react';
+const items=[
+ {role:'Software Engineer',org:'Aegis Software Pvt. Ltd.',time:'2024 – Present',text:'Developing enterprise applications and cloud-native delivery workflows using C#, Docker, Kubernetes, Jenkins, GitHub Actions, Terraform, and AWS.'},
+ {role:'Cloud Engineer',org:'Aegis Software Pvt. Ltd.',time:'2023 – 2024',text:'Built CI/CD pipelines, automated infrastructure and VM configuration, supported AWS networking, EKS deployments, GitOps workflows, and operational tooling.'}
+//  {role:'Computer Science & Mathematics Teacher',org:'Letang Secondary Boarding School',time:'2023 – 2025',text:'Taught mathematics, science, computer science, and C programming to secondary-level students while strengthening communication and mentoring skills.'}
+];
+export default function Experience(){return <section id="experience"><div className="section-shell"><p className="eyebrow">Career</p><h2 className="section-title">Professional experience</h2><div className="mt-10 space-y-6">{items.map(i=><article key={i.role+i.time} className="glass-card p-6 sm:p-8"><div className="flex flex-col justify-between gap-3 sm:flex-row"><div><h3 className="text-xl font-bold text-white">{i.role}</h3><p className="mt-1 text-sky-400">{i.org}</p></div><p className="flex items-center gap-2 text-sm text-slate-400"><CalendarDays size={16}/>{i.time}</p></div><p className="mt-4 max-w-4xl leading-7 text-slate-400">{i.text}</p></article>)}</div></div></section>}

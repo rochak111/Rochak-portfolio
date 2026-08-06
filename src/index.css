@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #020617; font-family: Inter, system-ui, sans-serif; }
+::selection { background: rgba(56, 189, 248, .35); }
+@layer components {
+  .section-shell { @apply mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12; }
+  .eyebrow { @apply mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-sky-400; }
+  .section-title { @apply text-3xl font-bold tracking-tight text-white sm:text-4xl; }
+  .section-copy { @apply mt-4 max-w-3xl leading-8 text-slate-400; }
+  .glass-card { @apply rounded-2xl border border-slate-800 bg-slate-900/60 shadow-glow backdrop-blur; }
+  .button-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-sky-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-sky-300; }
+  .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-sky-400 hover:text-sky-300; }
+}
